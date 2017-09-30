@@ -1,0 +1,23 @@
+<html>
+<head> <title>CCC J2</title></head>
+<body>
+<script>
+var word = prompt("Enter a number");
+var rotatingLetters = ["I","O","S","H","Z","X","N",];
+var wordCheck = 0;
+for(var i = 0; i < word.length; i++){
+	for(var j = 0; j < rotatingLetters.length; j++){
+		if(word.charAt(i) == rotatingLetters[j]){
+			wordCheck++;
+		}
+	}
+}
+if(wordCheck == word.length){
+	document.write("YES");
+}
+else{
+	document.write("NO");
+}
+</script>
+</body>
+</html>
